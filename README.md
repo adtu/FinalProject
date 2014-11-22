@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ==================================================================
 Human Activity Recognition Using Smartphones Dataset
 Version 1.0
@@ -68,3 +69,7 @@ Use of this dataset in publications must be acknowledged by referencing the foll
 This dataset is distributed AS-IS and no responsibility implied or explicit can be addressed to the authors or their institutions for its use or misuse. Any commercial use is prohibited.
 
 Jorge L. Reyes-Ortiz, Alessandro Ghio, Luca Oneto, Davide Anguita. November 2012.
+=======
+FinalProject
+============
+>>>>>>> 9838ecd13d13fc91f388e649e9ae7632f11b4a4b
