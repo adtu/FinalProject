@@ -8,6 +8,7 @@ This function performs the following tasks:
 3. Use descriptive activity names to name the activities in the data set.
 4. Extract only the measurements on the mean and standard deviation for each measurement.
 5. From the data set in step 4, create a second, independent tidy data set with the average of each variable for each activity and each subject.
+
 ==================================================================
 
 The datasets created include the following data frames:
@@ -118,6 +119,5 @@ This dataset is distributed AS-IS and no responsibility implied or explicit can 
 
 Jorge L. Reyes-Ortiz, Alessandro Ghio, Luca Oneto, Davide Anguita. November 2012.
 =======
-FinalProject
-============
+
 
