@@ -1,5 +1,53 @@
-<<<<<<< HEAD
+run_analysis R function
 ==================================================================
+
+This function performs the following tasks:
+
+1. Merge the training and the test sets to create one data set.
+2. Appropriately label the data set with descriptive variable names.
+3. Use descriptive activity names to name the activities in the data set.
+4. Extract only the measurements on the mean and standard deviation for each measurement.
+5. From the data set in step 4, create a second, independent tidy data set with the average of each variable for each activity and each subject.
+==================================================================
+
+The datasets created include the following data frames:
+======================================================
+
+- activity_labels : Links the class labels with their activity names read from original dataset activity_labels.txt.
+
+- features : List of all features (variables) and their associated id's read from original dataset features.txt.
+
+- subject_train : Used for training. Read from original dataset subject_train.txt. Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30.
+
+- X_train : Used for training dataset. Read from original dataset X_train.txt.
+
+- y_train : Contains training labels. Read from original dataset train/y_train.txt.
+
+_ subject_test : Used for test. Read from original dataset subject_test.txt. Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30.
+
+- X_test : Used as test dataset. Read from original dataset X_test.txt
+
+- y_test : Contains test labels. Read from original dataset y_test.txt
+
+- merged_subject : Merge of subject_train and subject_test 
+
+- merged_X : Merge of X_train and X_test
+
+- merged_y : Merge of y_train and y_test
+
+- extracted_X : Extract of only mean and standard deviation for each measurement from merged_X dataset.
+
+- mergedData : Column bind of merged_subject, merged_y$activity, and extracted_X
+
+- mergedDataMelt : Melt data frame mergedData into subject, activity, and variables (features that were measured in observations)
+
+- finalData : Tidy data set with the average of each variable for each activity and each subject.
+
+
+====================================================================================================================================
+Following is information about the original source of the data used in the function:
+====================================================================================================================================
+
 Human Activity Recognition Using Smartphones Dataset
 Version 1.0
 ==================================================================
@@ -72,4 +120,4 @@ Jorge L. Reyes-Ortiz, Alessandro Ghio, Luca Oneto, Davide Anguita. November 2012
 =======
 FinalProject
 ============
->>>>>>> 9838ecd13d13fc91f388e649e9ae7632f11b4a4b
+
