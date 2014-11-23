@@ -72,11 +72,11 @@ fBodyGyro-std()-Z
 fBodyAccMag-mean()          
 fBodyAccMag-std()           
 fBodyBodyAccJerkMag-mean()  
-fBodyBodyAccJerkMag-std()  
-fBodyBodyGyroMag-mean()     
-fBodyBodyGyroMag-std()      
+fBodyBodyAccJerkMag-std()
+fBodyBodyGyroMag-mean()
+fBodyBodyGyroMag-std()
 fBodyBodyGyroJerkMag-mean()
-fBodyBodyGyroJerkMag-std() 
+fBodyBodyGyroJerkMag-std()
 
 ======================================================================================================
 Following is information about the original source of features used in the run_analysis function:
