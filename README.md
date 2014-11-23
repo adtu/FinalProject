@@ -27,10 +27,10 @@ This function performs the following tasks:
 3. Use descriptive activity names to name the activities in 'merged_y' data frame.
 4. Extract only the measurements on the mean and standard deviation for each measurement.
       -  Extract mean and standard deviation for each measurement into 10299 x 66 data frame 'extracted_X'.
-      -  Column bind 'merged_subject', 'merged_y$activity', and 'extracted_X' to create 'mergedData' data frame containing 'Subject', 'Activity', features and their measures
+      -  Column bind 'merged_subject', 'merged_y$activity', and 'extracted_X' to create 10299 x 68 data frame 'mergedData' containing 'Subject', 'Activity', features and their measures
 5. From the data set in step 4, create a second, independent tidy data set with the average of each variable for each activity and each subject.
       - Melt 'mergedData' by 'Subject' and 'Activity' as id's, and features as variables to be averaged in 679734 x 4 data frame 'mergedDataMelt'.
-      - Calculate average of each variable for each activity and each subject in 'mergedDataMelt' and cast them into 'finalData' data frame.
+      - Calculate average of each variable for each activity and each subject in 'mergedDataMelt' and cast them into 180 x 68 data frame 'finalData'.
 
 ======================================================================
 The datasets created by this function include the following data frames:
