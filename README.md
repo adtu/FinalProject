@@ -62,7 +62,7 @@ The datasets created by this function include the following data frames:
 
 - 'mergedData' : Column bind of 'merged_subject', 'merged_y$activity', and 'extracted_X' into a data frame containing 'Subject', 'Activity', features and their measures.
 
-- 'mergedDataMelt' : Melted data frame from 'mergedData' by 'Subject' and 'Activity' as id's, and features as variables).
+- 'mergedDataMelt' : Melted data frame from 'mergedData' by 'Subject' and 'Activity' as id's, and features as variables.
 
 - 'finalData' : Tidy data set with the average of each feature (variable) for each 'Activity' and each'Subject'.
 
