@@ -1,34 +1,85 @@
-Final tidy dataset:
-==================
+Final tidy dataset finalData:
+============================
 
-- Only the mean and standard deviation features are extracted and calculated for their means
+- Only the mean and standard deviation features are extracted and calculated for their avearges
 
-- Mean is calculated by subject by activity by feature
+- Average is calculated by subject by activity by feature
 
-- Subjects, Activities, Features (only mean and std dev features), and feature means are stored in the final tidy dataset C 180 x 68
+- 30 Subjects, 6 Activities (per Subject), 66 Features (only means and standard deviations), and feature averages are stored in the final 180 x 68 tidy dataset finalData
 
-- Columns in finalDataset:
+- 68 Columns in finalData:
 
-subject                     activity                    tBodyAcc-mean()-X           tBodyAcc-mean()-Y          
-tBodyAcc-mean()-Z           tBodyAcc-std()-X            tBodyAcc-std()-Y            tBodyAcc-std()-Z           
-tGravityAcc-mean()-X        tGravityAcc-mean()-Y        tGravityAcc-mean()-Z        tGravityAcc-std()-X        
-tGravityAcc-std()-Y         tGravityAcc-std()-Z         tBodyAccJerk-mean()-X       tBodyAccJerk-mean()-Y      
-tBodyAccJerk-mean()-Z       tBodyAccJerk-std()-X        tBodyAccJerk-std()-Y        tBodyAccJerk-std()-Z       
-tBodyGyro-mean()-X          tBodyGyro-mean()-Y          tBodyGyro-mean()-Z          tBodyGyro-std()-X          
-tBodyGyro-std()-Y           tBodyGyro-std()-Z           tBodyGyroJerk-mean()-X      tBodyGyroJerk-mean()-Y     
-tBodyGyroJerk-mean()-Z      tBodyGyroJerk-std()-X       tBodyGyroJerk-std()-Y       tBodyGyroJerk-std()-Z      
-tBodyAccMag-mean()          tBodyAccMag-std()           tGravityAccMag-mean()       tGravityAccMag-std()       
-tBodyAccJerkMag-mean()      tBodyAccJerkMag-std()       tBodyGyroMag-mean()         tBodyGyroMag-std()         
-tBodyGyroJerkMag-mean()     tBodyGyroJerkMag-std()      fBodyAcc-mean()-X           fBodyAcc-mean()-Y          
-fBodyAcc-mean()-Z           fBodyAcc-std()-X            fBodyAcc-std()-Y            fBodyAcc-std()-Z           
-fBodyAccJerk-mean()-X       fBodyAccJerk-mean()-Y       fBodyAccJerk-mean()-Z       fBodyAccJerk-std()-X       
-fBodyAccJerk-std()-Y        fBodyAccJerk-std()-Z        fBodyGyro-mean()-X          fBodyGyro-mean()-Y         
-fBodyGyro-mean()-Z          fBodyGyro-std()-X           fBodyGyro-std()-Y           fBodyGyro-std()-Z          
-fBodyAccMag-mean()          fBodyAccMag-std()           fBodyBodyAccJerkMag-mean()  fBodyBodyAccJerkMag-std()  
-fBodyBodyGyroMag-mean()     fBodyBodyGyroMag-std()      fBodyBodyGyroJerkMag-mean() fBodyBodyGyroJerkMag-std() 
+subject
+activity                                         
+tBodyAcc-mean()-X           
+tBodyAcc-mean()-Y          
+tBodyAcc-mean()-Z           
+tBodyAcc-std()-X            
+tBodyAcc-std()-Y            
+tBodyAcc-std()-Z           
+tGravityAcc-mean()-X        
+tGravityAcc-mean()-Y        
+tGravityAcc-mean()-Z        
+tGravityAcc-std()-X        
+tGravityAcc-std()-Y         
+tGravityAcc-std()-Z         
+tBodyAccJerk-mean()-X       
+tBodyAccJerk-mean()-Y      
+tBodyAccJerk-mean()-Z       
+tBodyAccJerk-std()-X        
+tBodyAccJerk-std()-Y        
+tBodyAccJerk-std()-Z       
+tBodyGyro-mean()-X          
+tBodyGyro-mean()-Y          
+tBodyGyro-mean()-Z          
+tBodyGyro-std()-X          
+tBodyGyro-std()-Y           
+tBodyGyro-std()-Z           
+tBodyGyroJerk-mean()-X      
+tBodyGyroJerk-mean()-Y     
+tBodyGyroJerk-mean()-Z      
+tBodyGyroJerk-std()-X       
+tBodyGyroJerk-std()-Y       
+tBodyGyroJerk-std()-Z      
+tBodyAccMag-mean()          
+tBodyAccMag-std()           
+tGravityAccMag-mean()       
+tGravityAccMag-std()       
+tBodyAccJerkMag-mean()      
+tBodyAccJerkMag-std()       
+tBodyGyroMag-mean()         
+tBodyGyroMag-std()         
+tBodyGyroJerkMag-mean()     
+tBodyGyroJerkMag-std()      
+fBodyAcc-mean()-X           
+fBodyAcc-mean()-Y          
+fBodyAcc-mean()-Z           
+fBodyAcc-std()-X            
+fBodyAcc-std()-Y            
+fBodyAcc-std()-Z           
+fBodyAccJerk-mean()-X       
+fBodyAccJerk-mean()-Y       
+fBodyAccJerk-mean()-Z       
+fBodyAccJerk-std()-X       
+fBodyAccJerk-std()-Y        
+fBodyAccJerk-std()-Z        
+fBodyGyro-mean()-X          
+fBodyGyro-mean()-Y         
+fBodyGyro-mean()-Z          
+fBodyGyro-std()-X           
+fBodyGyro-std()-Y           
+fBodyGyro-std()-Z          
+fBodyAccMag-mean()          
+fBodyAccMag-std()           
+fBodyBodyAccJerkMag-mean()  
+fBodyBodyAccJerkMag-std()  
+fBodyBodyGyroMag-mean()     
+fBodyBodyGyroMag-std()      
+fBodyBodyGyroJerkMag-mean() 
+fBodyBodyGyroJerkMag-std() 
 
 ======================================================================================================
-Following is information about the original source of data used in the run_analysis function:
+Following is information about the original source of features used in the run_analysis function:
 ======================================================================================================
 
 Feature Selection 
