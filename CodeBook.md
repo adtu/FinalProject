@@ -1,13 +1,13 @@
-Final tidy dataset finalData created by run_analysis function:
-=============================================================
+Final tidy dataset 'finalData' created by 'run_analysis' function:
+=================================================================
 
 - Only the mean and standard deviation features are extracted and calculated for their avearges
 
-- Average is calculated by 'Subject' by 'Activity' by feature
+- Average is calculated by 'subject' by 'activity' by feature
 
-- 30 'Subject', 6 'Activity' (per 'Subject'), 66 features (only means and standard deviations) and their associated averages are stored in the final 180 x 68 tidy dataset ''finalData'
+- 30 'subject', 6 'activity' (per 'subject'), 66 features (only means and standard deviations) and their associated averages are stored in the final 180 x 68 dataset 'finalData'
 
-- 68 columns in finalData:
+- 68 columns in 'finalData':
 
 subject       
 activity                                         
