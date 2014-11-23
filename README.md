@@ -1,70 +1,70 @@
-run_analysis R function
+'run_analysis' R function
 ==================================================================
 
 This function performs the following tasks:
 
 1. Merge the training set and the test set to create one data set.
-   a. Read general datasets into R.
-      - Create 6 x 2 data frame activity_labels that links the class labels with their activity names.
-      - Assign meaningful names to columns in activity_labels data frame.
-      - Create 561 X 2 data frame features that contains a list of all features (variables) and their associated id's. 
-      - Assign meaningful column names to features data frame.
-   b. Read training datasets into R.
-      - Create 7352 x 1 data frame subject_train containing subjects used for training. Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30.
-      - Create 7352 x 561 data frame X_train containing data used as training dataset.
-      - Create 7352 x 1 data frame y_train containing training labels.
-   c. Read test datasets into R.
-      - Create 2947 x 1 data frame subject_test containing subjects used for test. Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30.
-      - Create 2947 x 561 data frame X_test contaning data used as test dataset.
-      - Create 2947 x 1 data frame y_test containing test labels.
-   d. Merge training and test datasets.
-      - Merge subject_train and subject_test data frames into 10299 x 1 data frame merged_subject.
-      - Merge X_train and X_test data frames into 10299 x 561 data frame merged_X.
-      - Merge y_train and y_test data frames into 10299 x 1 data frame merged_y.
-      - Assign meaningful column name to merged_subject data frame.
-      - Assgin meaningful column name to merged_y data frame.
-2. Appropriately label merged_X data frame with descriptive variable names.
-3. Use descriptive activity names to name the activities in merged_y data frame.
+   - Read general datasets into R.
+      - Create 6 x 2 data frame 'activity_labels' that links the class labels with their activity names.
+      - Assign meaningful names to columns in 'activity_labels' data frame.
+      - Create 561 X 2 data frame 'features' that contains a list of all features (variables) and their associated id's. 
+      - Assign meaningful column names to 'features' data frame.
+   - Read training datasets into R.
+      - Create 7352 x 1 data frame 'subject_train' containing subjects used for training. Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30.
+      - Create 7352 x 561 data frame 'X_train' containing data used as training dataset.
+      - Create 7352 x 1 data frame 'y_train' containing training labels.
+   - Read test datasets into R.
+      - Create 2947 x 1 data frame 'subject_test' containing subjects used for test. Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30.
+      - Create 2947 x 561 data frame 'X_test' contaning data used as test dataset.
+      - Create 2947 x 1 data frame 'y_test' containing test labels.
+   - Merge training and test datasets.
+      - Merge 'subject_train' and 'subject_test' data frames into 10299 x 1 data frame 'merged_subject'.
+      - Merge 'X_train' and 'X_test' data frames into 10299 x 561 data frame 'merged_X'.
+      - Merge 'y_train' and 'y_test' data frames into 10299 x 1 data frame 'merged_y'.
+      - Assign meaningful column name to 'merged_subject' data frame.
+      - Assgin meaningful column name to 'merged_y' data frame.
+2. Appropriately label 'merged_X' data frame with descriptive variable names.
+3. Use descriptive activity names to name the activities in 'merged_y' data frame.
 4. Extract only the measurements on the mean and standard deviation for each measurement.
-      -  Extract mean and standard deviation for each measurement into 10299 x 66 data frame extracted_X.
-      -  Column bind merged_subject, merged_y$activity, and extracted_X to create mergedData data frame containing subjects, activities, features and their measures
+      -  Extract mean and standard deviation for each measurement into 10299 x 66 data frame 'extracted_X'.
+      -  Column bind 'merged_subject', 'merged_y$activity', and 'extracted_X' to create 'mergedData' data frame containing 'Subject', 'Activity', features and their measures
 5. From the data set in step 4, create a second, independent tidy data set with the average of each variable for each activity and each subject.
-      - Melt mergedData by Subject and Activity as id's, and Feature as variables to be averaged in 679734 x 4 data frame mergedDataMelt.
-      - Calculate average of each variable for each activity and each subject in mergedDataMelt and cast them into finalData data frame.
+      - Melt 'mergedData' by 'Subject' and 'Activity' as id's, and features as variables to be averaged in 679734 x 4 data frame 'mergedDataMelt'.
+      - Calculate average of each variable for each activity and each subject in 'mergedDataMelt' and cast them into 'finalData' data frame.
 
 ======================================================================
-The datasets created by the function include the following data frames:
+The datasets created by this function include the following data frames:
 ======================================================================
 
-- activity_labels : Links the class labels with their activity names. This is read from original dataset activity_labels.txt.
+- 'activity_labels' : Links the class labels with their activity names. This is read from original dataset 'activity_labels.txt'.
 
-- features : List of all features (variables) and their associated id's. This is read from original dataset features.txt.
+- 'features' : List of all features (variables) and their associated id's. This is read from original dataset 'features.txt'.
 
-- subject_train : Contains subjects used for training. This is read from original dataset subject_train.txt. Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30.
+- 'subject_train' : Contains subjects used for training. This is read from original dataset 'subject_train.txt'. Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30.
 
-- X_train : Contains data used for training dataset. Read from original dataset X_train.txt.
+- 'X_train' : Contains data used for training dataset. This is read from original dataset 'X_train.txt'.
 
-- y_train : Contains training labels. This is read from original dataset train/y_train.txt.
+- 'y_train' : Contains training labels. This is read from original dataset 'y_train.txt'.
 
-_ subject_test : Used for test. This is read from original dataset subject_test.txt. Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30.
+- 'subject_test' : Used for test. This is read from original dataset 'subject_test.txt'. Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30.
 
-- X_test : Used as test dataset. This is read from original dataset X_test.txt
+- 'X_test' : Used as test dataset. This is read from original dataset 'X_test.txt'.
 
-- y_test : Contains test labels. This is read from original dataset y_test.txt
+- 'y_test' : Contains test labels. This is read from original dataset 'y_test.txt'.
 
-- merged_subject : Merge of subject_train and subject_test 
+- 'merged_subject' : Merge of 'subject_train' and 'subject_test'.
 
-- merged_X : Merge of X_train and X_test
+- 'merged_X' : Merge of 'X_train' and 'X_test'.
 
-- merged_y : Merge of y_train and y_test
+- 'merged_y' : Merge of 'y_train' and 'y_test'.
 
-- extracted_X : Extract of only mean and standard deviation for each measurement from merged_X
+- 'extracted_X' : Extract of only mean and standard deviation for each measurement from 'merged_X'.
 
-- mergedData : Column bind of merged_subject, merged_y$activity, and extracted_X into a data frame containing subjects, activities, features and their measures
+- 'mergedData' : Column bind of 'merged_subject', 'merged_y$activity', and 'extracted_X' into a data frame containing 'Subject', 'Activity', features and their measures.
 
-- mergedDataMelt : Melt data frame mergedData into subject, activity, and variables (features)
+- 'mergedDataMelt' : Melted data frame from 'mergedData' by 'Subject' and 'Activity' as id's, and features as variables).
 
-- finalData : Tidy data set with the average of each feature (variable) for each activity and each subject.
+- 'finalData' : Tidy data set with the average of each feature (variable) for each 'Activity' and each'Subject'.
 
 ====================================================================================================================================
 Following is information about the original source of the data used in the function:
