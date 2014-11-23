@@ -73,9 +73,9 @@ fBodyAccMag-mean()
 fBodyAccMag-std()           
 fBodyBodyAccJerkMag-mean()  
 fBodyBodyAccJerkMag-std()
-fBodyBodyGyroMag-mean()
-fBodyBodyGyroMag-std()
-fBodyBodyGyroJerkMag-mean()
+fBodyBodyGyroMag-mean()       
+fBodyBodyGyroMag-std()       
+fBodyBodyGyroJerkMag-mean()       
 fBodyBodyGyroJerkMag-std()
 
 ======================================================================================================
