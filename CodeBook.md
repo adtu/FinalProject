@@ -9,7 +9,7 @@ Final tidy dataset finalData created by run_analysis function:
 
 - 68 Columns in finalData:
 
-subject
+subject       
 activity                                         
 tBodyAcc-mean()-X           
 tBodyAcc-mean()-Y          
@@ -72,7 +72,7 @@ fBodyGyro-std()-Z
 fBodyAccMag-mean()          
 fBodyAccMag-std()           
 fBodyBodyAccJerkMag-mean()  
-fBodyBodyAccJerkMag-std()
+fBodyBodyAccJerkMag-std()       
 fBodyBodyGyroMag-mean()       
 fBodyBodyGyroMag-std()       
 fBodyBodyGyroJerkMag-mean()       
