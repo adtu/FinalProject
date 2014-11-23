@@ -60,7 +60,7 @@ The datasets created by this function include the following data frames:
 
 - 'extracted_X' : Extract of only mean and standard deviation for each measurement from 'merged_X'.
 
-- 'mergedData' : Column bind of 'merged_subject', 'merged_y$activity', and 'extracted_X' into a data frame containing 'Subject', 'Activity', features and their measures.
+- 'mergedData' : Column-binded data frame of 'merged_subject', 'merged_y$activity', and 'extracted_X', containing 'Subject', 'Activity', features and their measures.
 
 - 'mergedDataMelt' : Melted data frame from 'mergedData' by 'Subject' and 'Activity' as id's, and features as variables.
 
